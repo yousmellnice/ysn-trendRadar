@@ -30,6 +30,7 @@
 [GLOBAL_FILTER]
 # 过滤标题党
 震惊
+炒作
 
 
 
@@ -150,109 +151,393 @@
 [WORD_GROUPS]
 
 # ═══════════════════════════════════════════════════════════════
-#                         企业与品牌
+#                         AI 公司与实验室
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+[OpenAI]
+/\bOpenAI\b/i
+/山姆·奥特曼|\bSam Altman\b/i
+/\bChatGPT\b/i
+/\bGPT-[0-9o]+\b/i
+/\bGPT\b(?!.*俄)/i
+/\bSora\b(?=.*视频|.*AI)/i
+/\bDALL-E\b/i
+/\bCodex\b/i
+/\bWhisper\b(?=.*语音|.*AI)/i
 
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+[Anthropic]
+/\bAnthropic\b/i
+/\bClaude\b(?!.*劳德)/i
+/\bClaude [0-9.]+\b/i
+/\bClaude Code\b/i
+/达里奥·阿莫代|\bDario Amodei\b/i
 
-/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
+[谷歌 AI]
+/\bGoogle AI\b/i
+/\bDeepMind\b/i
+/\bGemini\b(?=.*谷歌|.*AI)/i
+/\bgemini-cli\b/i
+/\bBard\b(?=.*谷歌)/i
+/\bPaLM\b/i
+/\bAlphaGo\b/i
+/\bAlphaFold\b/i
+/德米斯·哈萨比斯|\bDemis Hassabis\b/i
 
-/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
+[xAI]
+/\bxAI\b/i
+/\bGrok\b/i
+/马斯克(?=.*AI|.*xAI)/
 
-/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
+[DeepSeek]
+/深度求索|幻方量化|梁文锋|\bDeepSeek\b/i
 
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+[通义千问]
+/通义千问|\bQwen\b/i
+/\bQwen[0-9.]*\b/i
+/通义灵码/
 
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
+[文心一言]
+/文心一言|\bErnie\b/i
+/\bErnie Bot\b/i
+/文心|百度AI/
 
-/黑神话|冯骥/ => 黑神话悟空
+[智谱 AI]
+/智谱|\bZhipu\b/i
+/\bGLM\b(?=.*智谱|.*AI)/i
+/\bChatGLM\b/i
+/\bGLM-[0-9]+\b/i
 
-/影之刃零|梁其伟/ => 影之刃零
+[Kimi]
+/月之暗面|\bMoonshot\b/i
+/\bKimi\b(?=.*AI|.*聊天|.*助手)/i
+/杨植麟/
 
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
+[豆包]
+/豆包|\bDoubao\b/i
+/\bCoze\b(?=.*字节|.*扣子)/i
+/扣子(?=.*AI|.*字节)/
 
-申奥
+[MiniMax]
+/\bMiniMax\b/i
+/海螺AI/
+/\bHailuo\b/i
 
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
-
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+[其他国产 AI]
+/零一万物|\b01.AI\b|\b01-AI\b/i => 零一万物
+/\b百川\b|\bBaichuan\b/i => 百川智能
+/\b澜舟\b|\bLangboat\b/i => 澜舟科技
+/\b面壁\b|\bModelbest\b/i => 面壁智能
+/讯飞星火|\bSpark\b(?=.*讯飞)/i => 讯飞星火
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         国家与地区
+#                         大语言模型 (LLM)
 # ═══════════════════════════════════════════════════════════════
 
-[中国]
-国产
-中国
+[大语言模型]
+/\bLLM\b/i
+/\bLarge Language Model\b/i
+/大语言模型|大模型/
+/语言模型(?=.*AI)/
 
-[东亚]
-日本
-朝鲜
-韩国
+[开源模型]
+/\bLlama\b/i
+/\bLlama [0-9.]+\b/i
+/\bMistral\b/i
+/\bGemma\b/i
+/\bVicuna\b/i
+/\bAlpaca\b(?=.*模型)/i
+/\bFalcon\b(?=.*模型)/i
+/开源大模型|开源模型/
 
-[北美]
-美国
-加拿大
-
-[西欧]
-法国
-英国
-
-/俄罗斯|俄国/ => 俄罗斯
-
-印度
+[多模态模型]
+/多模态|多模/
+/\bMultimodal\b/i
+/视觉语言模型/
+/\bVLM\b/i
+/\bVision Language Model\b/i
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         科技领域
+#                         AI Agent 与编排
 # ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
-/(?<![a-zA-Z])ai(?![a-zA-Z])/
-人工智能
+[AI Agent]
+/\bAI Agent\b/i
+/智能体|AI智能体/
+/\bAgent\b(?=.*AI|.*智能)/i
+/自主代理|自主智能体/
 
-[芯片]
-芯片
-光刻机
-半导体
+[MCP 协议]
+/\bMCP\b(?=.*Claude|.*AI|.*协议)/i
+/\bModel Context Protocol\b/i
+/模型上下文协议/
 
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
+[工作流编排]
+/\bLangChain\b/i
+/\bLlamaIndex\b/i
+/\bAutoGPT\b/i
+/\bBabyAGI\b/i
+/\bCrewAI\b/i
+/\bSuperAGI\b/i
+/\bAgentGPT\b/i
+/AI工作流|工作流编排/
 
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
 
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
+# ═══════════════════════════════════════════════════════════════
+#                         AGI 与前沿技术
+# ═══════════════════════════════════════════════════════════════
 
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
+[AGI]
+/\bAGI\b/i
+/\bArtificial General Intelligence\b/i
+/通用人工智能|人工通用智能|强人工智能/
 
-# 前沿科技
-量子
-脑机
-基因
+[RAG]
+/\bRAG\b(?=.*检索|.*增强|.*AI)/i
+/检索增强生成/
+/\bRetrieval Augmented Generation\b/i
 
-# 产业政策
-生产力
+[提示工程]
+/提示工程|\bPrompt Engineering\b/i
+/提示词|Prompt/
+/\bCoT\b|\bChain of Thought\b/i => 思维链
+/\bReAct\b(?=.*推理)/i
+/\bToT\b|\bTree of Thoughts\b/i => 思维树
+
+[模型训练]
+/\bRLHF\b/i => 人类反馈强化学习
+/\bDPO\b(?=.*对齐|.*优化)/i
+/微调|\bFine-tuning\b/i
+/\bLoRA\b|\bQLoRA\b/i => LoRA微调
+/\bPEFT\b/i => 参数高效微调
+/量化|\bQuantization\b(?=.*模型)/i
+/蒸馏|\bDistillation\b(?=.*模型)/i
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 编程工具
+# ═══════════════════════════════════════════════════════════════
+
+[AI 编程]
+/\bAI Coding\b/i
+/AI编程|AI辅助编程|智能编程/
+/代码生成|代码补全/
+
+[GitHub Copilot]
+/\bGitHub Copilot\b/i
+/\bCopilot\b(?=.*GitHub|.*代码)/i
+/\bCopilot X\b/i
+
+[Cursor]
+/\bCursor\b(?=.*AI|.*编程|.*代码)/i
+/\bCursor Editor\b/i
+
+[Claude Code]
+/\bClaude Code\b/i
+
+[其他 AI 编程工具]
+/\bDevin\b(?=.*AI|.*编程|.*工程师)/i
+/\bReplit Agent\b/i
+/\bCodeium\b/i
+/\bTabnine\b/i
+/\bCodeWhisperer\b/i
+/\bCody\b(?=.*Sourcegraph)/i
+/\bAider\b(?=.*AI|.*编程)/i
+/\bContinue\b(?=.*AI|.*VSCode)/i
+/\bCline\b(?=.*VSCode|.*AI)/i
+
+[AI 代码生成平台]
+/\bv0\b(?=.*Vercel|.*AI)/i => v0.dev
+/\bBolt.new\b/i
+/\bLovable\b(?=.*AI|.*开发)/i
+/\bStackBlitz\b(?=.*AI)/i
+
+
+# ═══════════════════════════════════════════════════════════════
+#                    Spec-driven Development
+# ═══════════════════════════════════════════════════════════════
+
+[规范驱动开发]
+/\bSpec-driven\b/i
+/\bSpecification-driven\b/i
+/规范驱动开发|需求驱动开发/
+/\bSpec-based\b/i
+
+[OpenSpec 生态]
+/\bOpenSpec\b/i
+/\bspec-kit\b/i
+
+[API 规范]
+/\bOpenAPI\b/i
+/\bSwagger\b/i
+/\bAPI Blueprint\b/i
+/\bRAML\b/i
+/API规范|接口规范|API文档/
+
+[低代码平台]
+/低代码|无代码/
+/\bLow-code\b|\bNo-code\b/i
+/可视化开发|拖拽开发/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 应用产品
+# ═══════════════════════════════════════════════════════════════
+
+[AI 绘画]
+/\bMidjourney\b/i
+/\bStable Diffusion\b/i
+/\bDALL-E\b/i
+/\bSD\b(?=.*绘画|.*AI)/i
+/文心一格|通义万相/
+/AI绘画|AI画图|文生图/
+
+[AI 视频]
+/\bSora\b(?=.*OpenAI|.*视频)/i
+/\bPika\b(?=.*AI|.*视频)/i
+/\bRunway\b(?=.*AI|.*视频)/i
+/可灵|\bKling\b/i
+/\bGen-[0-9]+\b(?=.*Runway)/i
+/AI视频|视频生成|文生视频/
+
+[AI 音频]
+/\bElevenLabs\b/i
+/语音合成|语音克隆/
+/\bTTS\b(?=.*AI|.*语音)/i
+/\bVITS\b/i
+/AI配音|AI语音/
+
+[AI 搜索]
+/\bPerplexity\b/i
+/秘塔|\bMetaso\b/i => 秘塔AI搜索
+/天工(?=.*AI|.*搜索)/i => 天工AI
+/\bYou.com\b/i
+/\bPhind\b/i
+/AI搜索|智能搜索/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 人物
+# ═══════════════════════════════════════════════════════════════
+
+[AI 领军人物]
+/山姆·奥特曼|\bSam Altman\b/i => Sam Altman
+/达里奥·阿莫代|\bDario Amodei\b/i => Dario Amodei
+/德米斯·哈萨比斯|\bDemis Hassabis\b/i => Demis Hassabis
+/伊利亚·苏茨克维|\bIlya Sutskever\b/i => Ilya Sutskever
+/杨植麟/
+/梁文锋/
+
+[AI 学术大师]
+/吴恩达|\bAndrew Ng\b/i => 吴恩达
+/李飞飞|\bFei-Fei Li\b/i => 李飞飞
+/杨立昆|\bYann LeCun\b/i => Yann LeCun
+/\bGeoffrey Hinton\b/i
+/\bYoshua Bengio\b/i
+/\bIan Goodfellow\b/i
+
+[国内 AI 大佬]
+/周鸿祎(?=.*AI|.*360)/
+/李彦宏(?=.*AI|.*百度)/
+/王小川(?=.*AI|.*搜狗|.*百川)/
+/王慧文(?=.*AI|.*光年)/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 基础设施
+# ═══════════════════════════════════════════════════════════════
+
+[AI 芯片]
+/\bH100\b|\bH200\b|\bB100\b|\bB200\b/i => 英伟达AI芯片
+/\bA100\b|\bA800\b/i
+/昇腾|\bAscend\b/i => 华为昇腾
+/\bTPU\b/i => 谷歌TPU
+/\bTrainium\b|\bInferentia\b/i => AWS AI芯片
+/AI芯片|训练芯片|推理芯片/
+
+[算力]
+/算力(?=.*AI|.*训练|.*推理)/
+/\bGPU\b(?=.*AI|.*训练|.*集群)/i
+/智算中心|算力中心|超算中心/
+/算力网络|算力调度/
+
+[AI 框架]
+/\bPyTorch\b/i
+/\bTensorFlow\b/i
+/\bJAX\b/i
+/\bPaddlePaddle\b|飞桨/i => 飞桨
+/\bMindSpore\b|昇思/i => 昇思
+/\bONNX\b/i
+/深度学习框架|AI框架/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 行业应用
+# ═══════════════════════════════════════════════════════════════
+
+[具身智能]
+/具身智能|具身AI/
+/\bEmbodied AI\b/i
+/\bEmbodied Intelligence\b/i
+
+[AI+医疗]
++AI
++医疗
+
+[AI+教育]
++AI
++教育
+
+[AI+金融]
++AI
++金融
+
+[AI+制造]
++AI
++制造
+
+[数字人]
+/数字人|虚拟人|AI主播/
+/数字员工|虚拟员工/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 技术概念
+# ═══════════════════════════════════════════════════════════════
+
+[AI 基础]
+/人工智能|AI技术/
+/机器学习|\bMachine Learning\b/i
+/深度学习|\bDeep Learning\b/i
+/神经网络|\bNeural Network\b/i
+
+[Transformer]
+/\bTransformer\b/i
+/\bAttention\b(?=.*机制|.*注意力)/i
+/自注意力|多头注意力/
+
+[向量数据库]
+/向量数据库|\bVector Database\b/i
+/\bPinecone\b|\bWeaviate\b|\bMilvus\b|\bChroma\b/i
+/\bEmbedding\b(?=.*向量|.*嵌入)/i
+
+[推理优化]
+/模型压缩|模型剪枝/
+/推理加速|推理优化/
+/\bvLLM\b|\bTGI\b/i
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         AI 政策与伦理
+# ═══════════════════════════════════════════════════════════════
+
+[AI 安全]
++AI
++安全|对齐|伦理|风险|监管
+
+[AI 政策]
++AI
++政策|法案|标准|规范|白皮书|指南
+
+/AI法案|AI监管/
