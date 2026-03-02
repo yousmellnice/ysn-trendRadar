@@ -180,6 +180,12 @@ AI代理
 多智能体
 协作代理
 
+[OpenClaw]
+/\bOpenClaw\b/i => OpenClaw
+/\bClaw\b/i => Claw
+开源AI框架
+AI开源项目
+
 [MCP 协议]
 /\bMCP\b/i => MCP
 Model Context Protocol
