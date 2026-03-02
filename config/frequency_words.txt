@@ -220,6 +220,33 @@ Claude Code
 /\bDeepMind\b/i => DeepMind
 /\bBard\b/i => Bard
 
+# ═══════════════════════════════════════════════════════════════
+#                      主流大模型动态追踪
+# ═══════════════════════════════════════════════════════════════
+
+[国际顶级模型]
+/\bOpenAI\b/i => OpenAI
+/\bChatGPT\b/i => ChatGPT
+/\bGPT-4\b/i => GPT-4
+/\bGPT-4o\b/i => GPT-4o
+/\bClaude\b/i => Claude
+/\bAnthropic\b/i => Anthropic
+/\bGemini\b/i => Gemini
+/\bLlama\b/i => Llama
+/\bMeta AI\b/i => Meta AI
+
+[国内头部模型]
+/\bDeepSeek\b/i => DeepSeek
+深度求索
+通义千问
+/\bQwen\b/i => Qwen
+/\bChatGLM\b/i => ChatGLM
+智谱清言
+/\bKimi\b/i => Kimi
+月之暗面
+豆包
+/\bDoubao\b/i => Doubao
+
 [OpenSpec]
 /\bOpenSpec\b/i => OpenSpec
 开放规范
@@ -247,3 +274,4 @@ AI助手
 多模态AI
 视觉AI
 语音AI
+
