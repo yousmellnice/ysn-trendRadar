@@ -185,14 +185,14 @@ AI编程
 代码助手
 编程助手
 
-[OpenAI]
-/\bOpenAI\b/i => OpenAI
-/\bChatGPT\b/i => ChatGPT
-/\bGPT\b-\d/i => GPT系列
-/\bSora\b/i => Sora
-/\bDALL-E\b/i => DALL-E
-/\bSam Altman\b/i => Sam Altman
-/\bGreg Brockman\b/i => Greg Brockman
+[AI 发展与趋势]
+AI发展
+AI趋势
+AI突破
+AI创新
+人工智能进展
+前沿AI
+尖端AI
 
 [Anthropic]
 /\bAnthropic\b/i => Anthropic
@@ -241,12 +241,3 @@ AI助手
 多模态AI
 视觉AI
 语音AI
-
-[AI 发展与趋势]
-AI发展
-AI趋势
-AI突破
-AI创新
-人工智能进展
-前沿AI
-尖端AI
