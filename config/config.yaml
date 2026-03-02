@@ -63,12 +63,6 @@ platforms:
     - id: "v2ex"
       name: "V2EX"
     
-    # 技术博客
-    - id: "csdn"
-      name: "CSDN"
-    - id: "cnblogs"
-      name: "博客园"
-    
     # 科技媒体
     - id: "36kr"
       name: "36氪"
