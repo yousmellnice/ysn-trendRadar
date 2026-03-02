@@ -62,16 +62,12 @@ platforms:
       name: "稀土掘金"
     - id: "v2ex"
       name: "V2EX"
-    - id: "niuke"
-      name: "牛客"
     
     # 科技媒体
     - id: "36kr"
       name: "36氪"
     - id: "zhihu"
       name: "知乎"
-    - id: "itzhijia"
-      name: "IT之家"
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
