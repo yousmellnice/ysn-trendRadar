@@ -58,46 +58,20 @@ platforms:
     # 技术论坛
     - id: "hackernews"
       name: "Hacker News"
-    - id: "github-trending"
-      name: "GitHub Trending"
-    - id: "stackoverflow"
-      name: "Stack Overflow 热门"
     - id: "juejin"
       name: "稀土掘金"
     - id: "v2ex"
       name: "V2EX"
-    - id: "infoq"
-      name: "InfoQ"
-    - id: "segmentfault"
-      name: "SegmentFault"
-    - id: "oschina"
-      name: "开源中国"
     
     # 技术博客
     - id: "csdn"
-      name: "CSDN 热榜"
+      name: "CSDN"
     - id: "cnblogs"
       name: "博客园"
-    - id: "developer-headline"
-      name: "开发者头条"
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
     
     # 科技媒体
     - id: "36kr"
       name: "36氪"
-    - id: "ifanr"
-      name: "爱范儿"
-    - id: "geekpark"
-      name: "极客公园"
-    - id: "techcrunch"
-      name: "TechCrunch"
-    - id: "theverge"
-      name: "The Verge"
-    - id: "wired"
-      name: "WIRED 连线"
-
-
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
@@ -521,8 +495,8 @@ advanced:
   # 合起来等于 1
   weight:
     rank: 0.6                         # 排名权重
-    frequency: 0.3                    # 频次权重
-    hotness: 0.1                      # 热度权重
+    frequency: 0.1                    # 频次权重
+    hotness: 0.3                      # 热度权重
 
   # 多账号限制
   max_accounts_per_channel: 3         # 每个渠道最大账号数量
