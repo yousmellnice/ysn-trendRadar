@@ -163,6 +163,15 @@
 生成式AI
 /\bGenerative AI\b/i => 生成式AI
 
+[AI 发展与趋势]
+AI发展
+AI趋势
+AI突破
+AI创新
+人工智能进展
+前沿AI
+尖端AI
+
 [AI Agent]
 /\bAI Agent\b/i => AI Agent
 AI代理
@@ -184,15 +193,6 @@ AI编程
 智能编程
 代码助手
 编程助手
-
-[AI 发展与趋势]
-AI发展
-AI趋势
-AI突破
-AI创新
-人工智能进展
-前沿AI
-尖端AI
 
 [Anthropic]
 /\bAnthropic\b/i => Anthropic
