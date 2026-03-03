@@ -62,8 +62,6 @@ platforms:
       name: "稀土掘金"
     - id: "v2ex"
       name: "V2EX"
-    - id: "infoq"
-      name: "InfoQ"
     
     # 科技媒体
     - id: "36kr"
