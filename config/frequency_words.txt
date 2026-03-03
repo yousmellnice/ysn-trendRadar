@@ -153,13 +153,13 @@
 #                         AI 相关资讯
 # ═══════════════════════════════════════════════════════════════
 
-[AI 核心技术]
-/(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI
+[AI 相关]
+/(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI 相关
 大语言模型
 /\bLLM\b/i => LLM
 大模型
 /\bAGI\b/i => AGI
-通用人工智能
+人工智能
 生成式AI
 /\bGenerative AI\b/i => 生成式AI
 @10
@@ -173,7 +173,6 @@ AI创新
 前沿AI
 尖端AI
 
-[AI Agent]
 /\bAI Agent\b/i => AI Agent
 AI代理
 智能代理
@@ -181,13 +180,11 @@ AI代理
 多智能体
 协作代理
 
-[OpenClaw]
 /\bOpenClaw\b/i => OpenClaw
 /\bClaw\b/i => Claw
 开源AI框架
 AI开源项目
 
-[MCP 协议]
 /\bMCP\b/i => MCP
 Model Context Protocol
 模型上下文协议
@@ -208,13 +205,11 @@ Claude代码
 Claude Code
 /\bDario Amodei\b/i => Dario Amodei
 
-[智谱AI]
 智谱
 智谱AI
 /\bChatGLM\b/i => ChatGLM
 /\bGLM\b/i => GLM
 
-[谷歌]
 /\bGoogle\b/i => 谷歌
 谷歌AI
 /\bGemini\b/i => Gemini
@@ -225,7 +220,6 @@ Claude Code
 #                      主流大模型动态追踪
 # ═══════════════════════════════════════════════════════════════
 
-[国际模型]
 /\bOpenAI\b/i => OpenAI
 /\bChatGPT\b/i => ChatGPT
 /\bGPT-4\b/i => GPT-4
@@ -236,7 +230,6 @@ Claude Code
 /\bLlama\b/i => Llama
 /\bMeta AI\b/i => Meta AI
 
-[国内模型]
 /\bDeepSeek\b/i => DeepSeek
 深度求索
 通义千问
@@ -248,20 +241,17 @@ Claude Code
 豆包
 /\bDoubao\b/i => Doubao
 
-[Spec 驱动开发]
 /\bSpec-driven development\b/i => Spec-driven development
 规范驱动开发
 /spec kit/i => spec-kit
 spec kit
 OpenSpec工具包
 
-[其他 AI 公司]
 /\bOpenAI\b/i => OpenAI
 /\bClaude\b/i => Claude
 智谱AI
 谷歌AI
 
-[AI 应用与工具]
 AI助手
 智能助手
 对话AI
