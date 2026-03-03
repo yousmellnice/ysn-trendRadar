@@ -162,6 +162,7 @@
 通用人工智能
 生成式AI
 /\bGenerative AI\b/i => 生成式AI
+@10
 
 [AI 发展与趋势]
 AI发展
@@ -224,7 +225,7 @@ Claude Code
 #                      主流大模型动态追踪
 # ═══════════════════════════════════════════════════════════════
 
-[国际顶级模型]
+[国际模型]
 /\bOpenAI\b/i => OpenAI
 /\bChatGPT\b/i => ChatGPT
 /\bGPT-4\b/i => GPT-4
@@ -235,7 +236,7 @@ Claude Code
 /\bLlama\b/i => Llama
 /\bMeta AI\b/i => Meta AI
 
-[国内头部模型]
+[国内模型]
 /\bDeepSeek\b/i => DeepSeek
 深度求索
 通义千问
@@ -246,12 +247,6 @@ Claude Code
 月之暗面
 豆包
 /\bDoubao\b/i => Doubao
-
-[OpenSpec]
-/\bOpenSpec\b/i => OpenSpec
-开放规范
-开放标准
-开放协议
 
 [Spec 驱动开发]
 /\bSpec-driven development\b/i => Spec-driven development
