@@ -164,14 +164,37 @@
 /\bGenerative AI\b/i => 生成式AI
 @10
 
-[AI 发展与趋势]
-AI发展
-AI趋势
-AI突破
-AI创新
+# 第一部分：AI基础词 + 实践限定
+/(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI
 人工智能
-前沿AI
-尖端AI
+生成式AI
++实践
++案例
++经验
++技巧
++方法
++提效
+
+# 技术范式监控
+生成式AI
+多模态AI
++范式
++演进
++转变
++新时代
+
+# 场景1：AI编程演进趋势
+AI编程
+代码生成
+自动测试
+智能调试
+代码审查
+DevOps
++趋势
++演进
++新范式
++未来
++方向
 
 /\bAI Agent\b/i => AI Agent
 AI代理
@@ -181,22 +204,64 @@ AI代理
 协作代理
 
 /\bOpenClaw\b/i => OpenClaw
-/\bClaw\b/i => Claw
-开源AI框架
-AI开源项目
+
+# 技术特性关注
+OpenClaw
++工具调用
++函数调用
++插件系统
++扩展框架
++集成
+
+# 与现有生态的关联
+OpenClaw
++Claude
++Anthropic
++MCP
++模型上下文协议
++兼容
++适配
+
+# 开发者视角
+OpenClaw
++开发
++部署
++配置
++教程
++示例
++文档
++快速开始
 
 /\bMCP\b/i => MCP
-Model Context Protocol
+/\bModel Context Protocol\b/i => 模型上下文协议
 模型上下文协议
-MCP协议
++AI
++大模型
++协议
++标准
++框架
 
-[AI 编程]
-/\bAI Coding\b/i => AI Coding
-AI编程
+# AI代码生成专项
 代码生成
-智能编程
-代码助手
-编程助手
+自动生成
+生成代码
+代码自动生成
+AGI
++AI
++大模型
++工具
+
+# 第一部分：核心功能（高权重）
+代码生成
+自动生成
+智能生成
+代码补全
+自动补全
+代码审查
+自动审查
+代码解释
+自动解释
++AI
 
 [Anthropic]
 /\bAnthropic\b/i => Anthropic
@@ -220,43 +285,50 @@ Claude Code
 #                      主流大模型动态追踪
 # ═══════════════════════════════════════════════════════════════
 
-/\bOpenAI\b/i => OpenAI
-/\bChatGPT\b/i => ChatGPT
-/\bGPT-4\b/i => GPT-4
-/\bGPT-4o\b/i => GPT-4o
-/\bClaude\b/i => Claude
-/\bAnthropic\b/i => Anthropic
-/\bGemini\b/i => Gemini
-/\bLlama\b/i => Llama
-/\bMeta AI\b/i => Meta AI
+# 核心公司匹配
+OpenAI
+Anthropic
+Google-AI
+Meta-AI
 
-/\bDeepSeek\b/i => DeepSeek
+# 第一梯队：当前主力产品（高权重）
+ChatGPT
+Claude
+Gemini
+Bard
+
+# 重大发布触发
+/\b(发布|推出|上线).{0,10}(GPT|Claude|Gemini|Llama)/
+/\b(重大更新|版本更新|重要升级)\b/
+/\b(新模型|新版本|新一代).{0,5}发布\b/
+
+# 国内模型
+# 第一部分：核心公司/品牌（基础匹配）
 深度求索
-通义千问
-/\bQwen\b/i => Qwen
-/\bChatGLM\b/i => ChatGLM
-智谱清言
-/\bKimi\b/i => Kimi
-月之暗面
-豆包
-/\bDoubao\b/i => Doubao
-
-/\bSpec-driven development\b/i => Spec-driven development
-规范驱动开发
-/spec kit/i => spec-kit
-spec kit
-OpenSpec工具包
-
-/\bOpenAI\b/i => OpenAI
-/\bClaude\b/i => Claude
+阿里巴巴
 智谱AI
-谷歌AI
+月之暗面
+字节跳动
+百度
+讯飞
+商汤
++AI
++大模型
 
-AI助手
-智能助手
-对话AI
-交互式AI
-多模态AI
-视觉AI
-语音AI
+# 第二部分：主力产品（高权重）
+DeepSeek
+通义千问
+Kimi
+豆包
+文心一言
+混元
 
+# 开源模型发布
+DeepSeek
+Qwen
+GLM
++开源
++模型权重
++可商用
++许可证
++社区
