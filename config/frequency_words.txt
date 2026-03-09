@@ -162,7 +162,7 @@
 人工智能
 生成式AI
 /\bGenerative AI\b/i => 生成式AI
-@10
+@8
 
 # 第一部分：AI基础词 + 实践限定
 /(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI
@@ -182,6 +182,30 @@
 +演进
 +转变
 +新时代
+
+# Prompt 设计与优化
+提示词
+Prompt
+提示模板
+提示模式
+提示技巧
+提示策略
++优化
++设计
++工程
++最佳实践
+
+# Skill 开发与管理
+Skill
+Skills
+agent skill
+agent skills
+技能
+能力
++开发
++管理
++编排
++组合
 
 # 场景1：AI编程演进趋势
 AI编程
@@ -207,11 +231,11 @@ AI代理
 
 # 技术特性关注
 OpenClaw
+小龙虾
 +工具调用
 +函数调用
 +插件系统
 +扩展框架
-+集成
 
 # 与现有生态的关联
 OpenClaw
@@ -226,10 +250,12 @@ OpenClaw
 OpenClaw
 +开发
 +部署
++安装
 +配置
 +教程
 +示例
 +文档
++实践
 +快速开始
 
 /\bMCP\b/i => MCP
@@ -240,6 +266,9 @@ OpenClaw
 +协议
 +标准
 +框架
++应用
++集成
++工具
 
 # AI代码生成专项
 代码生成
@@ -269,11 +298,6 @@ AGI
 Claude代码
 Claude Code
 /\bDario Amodei\b/i => Dario Amodei
-
-智谱
-智谱AI
-/\bChatGLM\b/i => ChatGLM
-/\bGLM\b/i => GLM
 
 /\bGoogle\b/i => 谷歌
 谷歌AI
