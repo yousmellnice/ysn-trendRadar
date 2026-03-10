@@ -162,7 +162,7 @@
 人工智能
 生成式AI
 /\bGenerative AI\b/i => 生成式AI
-@8
+@10
 
 # 第一部分：AI基础词 + 实践限定
 /(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI
