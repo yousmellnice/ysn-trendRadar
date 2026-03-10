@@ -168,6 +168,7 @@
 /(?<![a-zA-Z])ai(?![a-zA-Z])/ => AI
 人工智能
 生成式AI
+智能体
 +实践
 +案例
 +经验
@@ -281,16 +282,16 @@ AGI
 +工具
 
 # 第一部分：核心功能（高权重）
-代码生成
-自动生成
-智能生成
-代码补全
-自动补全
-代码审查
-自动审查
+AI
++代码生成
++自动生成
++智能生成
++代码补全
++自动补全
++代码审查
++自动审查
 代码解释
-自动解释
-+AI
++自动解释
 
 [Anthropic]
 /\bAnthropic\b/i => Anthropic
@@ -298,12 +299,6 @@ AGI
 Claude代码
 Claude Code
 /\bDario Amodei\b/i => Dario Amodei
-
-/\bGoogle\b/i => 谷歌
-谷歌AI
-/\bGemini\b/i => Gemini
-/\bDeepMind\b/i => DeepMind
-/\bBard\b/i => Bard
 
 # ═══════════════════════════════════════════════════════════════
 #                      主流大模型动态追踪
@@ -317,6 +312,8 @@ Meta-AI
 
 # 第一梯队：当前主力产品（高权重）
 ChatGPT
+GPT
+CodeX
 Claude
 Gemini
 Bard
