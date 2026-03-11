@@ -261,6 +261,24 @@ OpenClaw
 +实践
 +快速开始
 
+# 横向评测对比
+Cursor
+Claude-Code
+Codex
+Trae
++对比
++评测
++横评
+
+# 实战应用分享
+Cursor
+Claude-Code
+Codex
+Trae
++使用案例
++实战经验
++效率提升
+
 /\bMCP\b/i => MCP
 /\bModel Context Protocol\b/i => 模型上下文协议
 模型上下文协议
