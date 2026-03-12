@@ -107,7 +107,7 @@ rss:
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（默认启用）
 
-    max_age_days: 2                   # 最大文章年龄（天）
+    max_age_days: 3                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
 
@@ -130,10 +130,9 @@ rss:
       name: "机器之心"
       url: "https://plink.anyfeeder.com/weixin/almosthuman2014"
     
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-      # enabled: false                  # 禁用
+    - id: "huaerjieribao"
+      name: "华尔街日报"
+      url: "https://cn.wsj.com/rss-news-and-feeds/zh-hans"
 
     # 自定义源示例
     # - id: "custom-feed"
