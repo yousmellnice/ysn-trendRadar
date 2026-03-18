@@ -122,9 +122,9 @@ rss:
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
 
-    - id: "jiqizhixin"
-      name: "机器之心"
-      url: "https://plink.anyfeeder.com/weixin/almosthuman2014"
+    # - id: "jiqizhixin"
+    #   name: "机器之心"
+    #   url: "https://plink.anyfeeder.com/weixin/almosthuman2014"
     
     - id: "huaerjieribao"
       name: "华尔街日报"
