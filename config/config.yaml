@@ -78,8 +78,6 @@ platforms:
       name: "少数派"
     - id: "solidot"
       name: "Solidot"
-    - id: "freebuf"
-      name: "Freebuf 网络安全"
 
 # ===============================================================
 # 3. 数据源 - RSS 订阅
