@@ -60,8 +60,6 @@ platforms:
       name: "Hacker News"
     - id: "juejin"
       name: "稀土掘金"
-    - id: "v2ex"
-      name: "V2EX"
     - id: "pcbeta"
       name: "远景论坛"
 
