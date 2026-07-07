@@ -60,8 +60,8 @@ platforms:
       name: "Hacker News"
     - id: "juejin"
       name: "稀土掘金"
-    - id: "pcbeta"
-      name: "远景论坛"
+    # - id: "pcbeta"
+    #   name: "远景论坛"
 
     # === 财经投资类 ===
     - id: "wallstreetcn-hot"
@@ -70,8 +70,8 @@ platforms:
       name: "腾讯新闻 综合早报"
     
     # 科技媒体
-    - id: "36kr"
-      name: "36氪"
+    #- id: "36kr"
+    #  name: "36氪"
     - id: "zhihu"
       name: "知乎"
     - id: "sspai"
